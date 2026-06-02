@@ -2,8 +2,8 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/cadastro', methods=['GET', 'POST'])
-def cadastro():
+@app.route('/atividade', methods=['GET', 'POST'])
+def atividade():
 
     mensagem = ""
 
