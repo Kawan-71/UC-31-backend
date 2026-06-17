@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Acessos</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #0d1b2a;
+            color: white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background: #1b263b;
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            width:400px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+        }
+
+        h1{
+            margin-bottom:20px;
+        }
+
+        .contador{
+            font-size:50px;
+            font-weight:bold;
+            color:#00b4d8;
+            margin:20px 0;
+        }
+
+        button{
+            background:#e63946;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        button:hover{
+            transform:scale(1.05);
+            background:#c1121f;
+        }
+
+        .marca{
+            margin-top:20px;
+            font-size:12px;
+            opacity:0.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contador de Acessos</h1>
+
+        <div class="contador">
+            {{ contador }}
+        </div>
+
+        <a href="/zerar">
+            <button>Zerar</button>
+        </a>
+    </div>
+
+</body>
+</html>
