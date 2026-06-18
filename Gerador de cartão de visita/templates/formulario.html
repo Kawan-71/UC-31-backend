@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Cartão</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Gerador de Cartão de Visitas</h1>
+
+    <form action="/cartao" method="POST">
+
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label>Cargo:</label>
+        <input type="text" name="cargo" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+
+        <label>Telefone:</label>
+        <input type="text" name="telefone" required>
+
+        <button type="submit">Gerar Cartão</button>
+
+    </form>
+</div>
+
+</body>
+</html>

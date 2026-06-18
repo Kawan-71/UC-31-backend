@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Seu Cartão</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="cartao">
+
+    <h2>{{ nome }}</h2>
+
+    <p><strong>Cargo:</strong> {{ cargo }}</p>
+
+    <p><strong>E-mail:</strong> {{ email }}</p>
+
+    <p><strong>Telefone:</strong> {{ telefone }}</p>
+
+    <a href="/novo">
+        <button>Novo Cartão</button>
+    </a>
+
+</div>
+
+</body>
+</html>
